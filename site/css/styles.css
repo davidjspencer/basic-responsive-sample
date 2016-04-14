@@ -5,27 +5,81 @@ Mobile view should appear only if the width of the browser is equal to or less t
 
 * {
 	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: justify;
+	line-height: 1.3em;
 }
-
+h1 {
+	text-align: center;
+	color: white;
+	margin: 5%;
+}
+body {
+	background-color: black;
+}
 .row {
 	width: 100%;
 }
 
 .food {
 	position: absolute;
-	top: 0;
-	right: 0px;
+	top: -1px;
+	right: -1px;
 	border: 1px solid black;
 	padding: 10px;
-	width: 30%;
+	width: 33%;
 	text-align: center;
 	background-color: red;
 	margin-top: 0px;/*needs this to eliminate auto margin*/
 }
-
-.col {
+#beef {
+	background-color: blue;
+}
+#sushi {
+	background-color: purple;
+}
+.col-sm {
 	position: relative;
-	padding: 50px 20px 20px 20px;
+	padding: 50px 3% 3% 3%;
 	background-color: gray;
 	margin-bottom: 20px;
+	margin-left: 1.5%;
+	margin-right: 1.5%;
+	border: 1px solid black;
+	color: white;
+}
+/*nav li {
+	display: inline-block;
+	text-decoration: none;
+	padding: 2%;
+	text-align: center;
+	border: 1px solid gray;
+	width: 31%;
+}
+header {
+	background-color: cyan;
+}*/
+@media (min-width:992px) {
+	.col-lg {
+		width: 30.3%;
+		float: left;
+		display: inline-block;
+		margin: 10px 1.5%;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.col-md {
+		width: 47%;
+		margin-left: 1.5%;
+		margin-right: 1.5%;
+		display: inline-block;
+		float: left;
+	}
+	.col-md:first-child {
+		width: 97%;
+		margin-left: 1.5%;
+		margin-right: 1.5%;
+		float: left;
+	}
 }
