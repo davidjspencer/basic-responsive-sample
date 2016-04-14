@@ -32,12 +32,7 @@ body {
 	background-color: red;
 	margin-top: 0px;/*needs this to eliminate auto margin*/
 }
-#beef {
-	background-color: blue;
-}
-#sushi {
-	background-color: purple;
-}
+
 .col-sm {
 	position: relative;
 	padding: 50px 3% 3% 3%;
@@ -47,6 +42,17 @@ body {
 	margin-right: 1.5%;
 	border: 1px solid black;
 	color: white;
+}
+#beef {
+	background-color: maroon;
+	color: white;
+}
+#sushi {
+	background-color: beige;
+	color: black;
+}
+#chicken {
+	color: black;
 }
 /*nav li {
 	display: inline-block;
@@ -76,7 +82,7 @@ header {
 		display: inline-block;
 		float: left;
 	}
-	.col-md:first-child {
+	.col-md:last-child {
 		width: 97%;
 		margin-left: 1.5%;
 		margin-right: 1.5%;
